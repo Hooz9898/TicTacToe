@@ -77,7 +77,7 @@ public class Main {
                         oCounter = 0;
                     }
                     if (tictactoe[c][r].equals("o")) {
-                        xCounter = 0;
+                        xCounter = 1;
                         oCounter++;
                     }
                     if (xCounter == 3){
