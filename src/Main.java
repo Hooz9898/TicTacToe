@@ -10,10 +10,10 @@ public class Main {
         int o2 = 0;
         boolean cross = false;
         while (!false){
-            while(x1 > -1 && x1 < 3 && x2 > -1 && x2 < 3 && tictactoe[x1][x2] == null) {
-                System.out.print("Enter X coordinate: ");
+            while(x1 > -1 || x1 > 3 || x2 < -1 || x2 >3 || !(tictactoe[x1][x2] == null)) {
+                System.out.print("Enter X coordinate [x]: ");
                 x1 = sc.nextInt();
-                System.out.print("Enter Y coordinate: ");
+                System.out.print("Enter Y coordinate [x]: ");
                 x2 = sc.nextInt();
             }
             tictactoe[x1][x2] = "X";
@@ -24,6 +24,7 @@ public class Main {
                 }
                 System.out.println();
             }
+
             while(o1 > -1 && o1 < 3 && o2 > -1 && o2 < 3 && tictactoe[o1][o2] == null){
                 System.out.print("Enter X coordinate  [o]: ");
                 o1 = sc.nextInt();
@@ -31,6 +32,8 @@ public class Main {
                 o2 = sc.nextInt();
                 tictactoe[o1][o2] = "o";
             }
+
+
         }
 
     }
