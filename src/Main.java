@@ -4,10 +4,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String[][] tictactoe = new String[3][3];
-        int x1 = -1;
-        int x2 = -1;
-        int o1 = -1;
-        int o2 = -1;
+        int x1 = 0;
+        int x2 = 0;
+        int o1 = 0;
+        int o2 = 0;
         boolean cross = false;
         while (!false){
             while(x1 > -1 && x1 < 3 && x2 > -1 && x2 < 3 && tictactoe[x1][x2] == null) {
