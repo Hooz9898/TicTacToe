@@ -14,7 +14,7 @@ public class Main {
             x1 = sc.nextInt();
             System.out.print("Enter Y coordinate: ");
             x2 = sc.nextInt();
-
+            tictactoe[x1][x2] = "X";
 
         }
 
