@@ -12,6 +12,9 @@ public class Main {
         while (!false){
             System.out.print("Enter X coordinate: ");
             x1 = sc.nextInt();
+            System.out.print("Enter Y coordinate: ");
+            x2 = sc.nextInt();
+
 
         }
 
