@@ -10,13 +10,17 @@ public class Main {
         int o2 = -1;
         boolean cross = false;
         while (!false){
-            while(x1 < 0 || x1 > 3 || x2 < 0 || x2 > 3 || !(tictactoe[x1][x2] == null)) {
+            boolean fullX = true;
+            while(x1 < 0 || x1 > 3 || x2 < 0 || x2 > 3 || fullX) {
                 System.out.print("Enter X coordinate: ");
                 x1 = sc.nextInt();
                 System.out.print("Enter Y coordinate [x]: ");
                 x2 = sc.nextInt();
+                if(tictactoe[x1][x2] != null){
+                    fullX = false;
+                }
+                tictactoe[x1][x2] = "X";
             }
-            tictactoe[x1][x2] = "X";
 
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 3; j++) {
@@ -24,13 +28,13 @@ public class Main {
                 }
                 System.out.println();
             }
-            while(o1 < 0 || o1 > 3 || o2 < 0 || o2 > 3 || tictactoe[o1][o2] != null){
+            while(o1 < 0 || o1 > 3 || o2 < 0 || o2 > 3){
                 System.out.print("Enter X coordinate  [o]: ");
                 o1 = sc.nextInt();
                 System.out.print("Enter Y coordinate [o]: ");
                 o2 = sc.nextInt();
             }
-            tictactoe[o1][o2] = "o";
+            tictactoe[o1][o2] = "O";
         }
 
     }
