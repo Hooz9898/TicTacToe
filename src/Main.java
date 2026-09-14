@@ -4,10 +4,16 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String[][] tictactoe = new String[3][3];
-        String x1;
-        String o1;
+        int x1;
+        int x2;
+        int o1;
+        int o2;
         Boolean cross = false;
-        System.out.println("");
+        while (!false){
+            System.out.print("Enter X coordinate: ");
+            x1 = sc.nextInt();
+
+        }
 
     }
 }
