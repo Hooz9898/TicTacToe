@@ -24,13 +24,13 @@ public class Main {
                 }
                 System.out.println();
             }
-            while(o1 > -1 && o1 < 3 && o2 > -1 && o2 < 3 && tictactoe[o1][o2] == null){
+            while(o1 < 0 || o1 > 3 || o2 < 0 || o2 > 3 || tictactoe[o1][o2] != null){
                 System.out.print("Enter X coordinate  [o]: ");
                 o1 = sc.nextInt();
                 System.out.print("Enter Y coordinate [o]: ");
                 o2 = sc.nextInt();
-                tictactoe[o1][o2] = "o";
             }
+            tictactoe[o1][o2] = "o";
         }
 
     }
